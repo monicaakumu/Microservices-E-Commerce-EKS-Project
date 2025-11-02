@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "ekangaki_nguti1"
+    bucket = "ekangaki_nguti2"
     key    = "k8/terraform.tfstate"
     region = "us-east-1"
   }
