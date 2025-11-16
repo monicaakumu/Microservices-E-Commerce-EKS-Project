@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket1" {
-  bucket = "ekangaki_nguti1"
+  bucket = "ekangaki-nguti-1"
 
   tags = {
-    Name        = "ekangaki_nguti1"
+    Name        = "ekangaki-nguti-1"
     Environment = "dev"
   }
 }
@@ -19,10 +19,10 @@ resource "aws_s3_bucket_versioning" "bucket1_versioning" {
 }
 
 resource "aws_s3_bucket" "bucket2" {
-  bucket = "ekangaki_nguti2"
+  bucket = "ekangaki-nguti-2"
 
   tags = {
-    Name        = "ekangaki_nguti2"
+    Name        = "ekangaki-nguti-2"
     Environment = "dev"
   }
 }
