@@ -63,13 +63,13 @@ pipeline {
                         git config user.email "${GIT_EMAIL}"
                         git config user.name "${GIT_USER_NAME}"
 
-                        # Redundant assignment removed; BUILD_NUMBER is already available.
+                        # BUILD_NUMBER is already available from Jenkins environment
                         echo "Applying image tag: ${REPO_URL}:${BUILD_NUMBER}"
 
                         # Update the image tag in the YAML file
                         sed -i "s#image:.*#image: ${REPO_URL}:${BUILD_NUMBER}#g" ${YAML_FILE}
 
-                        # Stage only the specific modified file
+                        # Stage only the specific modified file (Corrected from 'git add .')
                         git add ${YAML_FILE}
 
                         # Commit the change. Use '|| true' to IGNORE EXIT CODE 1 if no change was made.
