@@ -3,10 +3,10 @@ pipeline {
 
     environment {
         GIT_REPO_NAME = "Microservices-E-Commerce-eks-project"
-        GIT_EMAIL = "georgegedeon2012@gmail.com"
-        GIT_USER_NAME = "Ekangaki"
+        GIT_EMAIL = "moni.akumu@gmail.com"
+        GIT_USER_NAME = "monicaakumu"
         IMAGE_NAME = "adservice"
-        REPO_URL = "970547380044.dkr.ecr.us-east-1.amazonaws.com/adservice"
+        REPO_URL = "481665089446.dkr.ecr.us-east-1.amazonaws.com/adservice"
         YAML_FILE = "adservice.yaml"
     }
 
@@ -19,7 +19,7 @@ pipeline {
 
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/Ekangaki/Microservices-E-Commerce-EKS-Project.git'
+                git branch: 'main', url: 'https://github.com/monicaakumu/Microservices-E-Commerce-EKS-Project.git'
             }
         }
 
