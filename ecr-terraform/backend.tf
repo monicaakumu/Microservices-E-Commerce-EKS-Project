@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "monica-terraform-state-bucket"
+    bucket = "monica-busia-1"
     key    = "ecr/terraform.tfstate"
     region = "us-east-1"
   }
