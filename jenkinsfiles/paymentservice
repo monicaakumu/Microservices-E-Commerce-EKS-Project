@@ -32,7 +32,7 @@ pipeline {
                 script {
                     sh '''
                     # Authenticate Docker client to ECR
-                    aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 970547380044.dkr.ecr.us-east-1.amazonaws.com
+                    aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 481665089446.dkr.ecr.us-east-1.amazonaws.com
 
                     # Tag the image with the unique Jenkins BUILD_NUMBER
                     docker tag paymentservice:latest 481665089446.dkr.ecr.us-east-1.amazonaws.com/paymentservice:${BUILD_NUMBER}
