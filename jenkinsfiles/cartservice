@@ -47,7 +47,7 @@ pipeline {
             environment {
                 // Define environment variables for clean configuration
                 GIT_REPO_NAME = "Microservices-E-Commerce-EKS-Project"
-                GIT_EMAIL = moni.akumu@gmail.com""
+                GIT_EMAIL = "moni.akumu@gmail.com"
                 GIT_USER_NAME = "monicaakumu"
                 IMAGE_NAME = "cartservice"
                 REPO_URL = "481665089446.dkr.ecr.us-east-1.amazonaws.com/cartservice"
